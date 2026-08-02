@@ -10,24 +10,32 @@
 
                   <!--CRUD-->
   
-  
-                  <h2 style="text-align: center;">Gerenciamento de Acessos do Rafa's</h2>
-<div style="text-align: center;">    
+<div id="logo" style="text-align: center;">
+    <img src="imagens/logo_telainicial.jpg" width="150" height="150" alt="Rafa's Burguer"><br>
+   <br>
+</div>
+
+<div id="form-acesso" style="text-align: center;">  
+  <h2 style="text-align: center;">Gerenciamento de Acessos do Rafa's</h2>  
   <label for="acesso usuario">Dados de Acesso do Usuário</label>
   <p> Entre com os dados solicitados :</p>
 
      <form>
         <label for="name">Nome:</label>
-           <input type="text" id="name" name="name"><br><br>
+           <input type="text" id="name" name="name" placeholder="Nome"><br><br>
        <label for="age">Ano de Nascimento:</label>
-            <input type="text" id="age" name="age"><br><br>
+            <input type="text" id="age" name="age" placeholder="Ano de Nascimento"><br><br>
         <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br><br>
-                  <button type="create" id="btn-salvar">Criar</button>
-                  <button type="submit" id="btn-entrar">entrar</button>
-
+            <input type="text" id="email" name="email" placeholder="Email"><br><br>
+                  
+                  <button type="submit" id="btn-entrar">Entrar</button>
+          
 </div>
-
+<div style="text-align: center;">
+  <hr>
+  <p>Se nao possuir cadastro, clique em Criar</p>
+  <button type="submit" id="btn-criar">Criar</button>
+</div>
 
   
 </body>
