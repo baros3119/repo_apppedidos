@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Rafa's Burguer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff5e6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #ff8c00;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #e07b00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="imagens/logo_telainicial.jpg" width="150" height="150" alt="Rafa's Burguer">
+    <h1>Cadastro</h1>
+
+    <form action="criarcadastro.html" method="POST">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="endereco">Endereço de entrega:</label>
+      <input type="text" id="endereco" name="endereco" required>
+
+      <label for="aniversario">Data de aniversário:</label>
+      <input type="date" id="aniversario" name="aniversario" required>
+
+      <label for="senha">Senha (máx. 6 caracteres):</label>
+      <input type="password" id="senha" name="senha" maxlength="6" required>
+
+      <button type="submit">Criar Conta</button>
+    </form>
+  </div>
+</body>
+</html>
