@@ -3,32 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Rafa's B</title>
+  <title>Login - Rafa's Burguer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 style="text-align: center;">Rafa's Burguer</h1>
+  <div class="container">
+    <img src="logo_tela_rafas.jpg" alt="Logo Rafa's Burguer">
+    <h1><strong>Rafa's Burguer</strong></h1>
 
-                  <!--CRUD-->
-  
-  
-                  <h2 style="text-align: center;">Gerenciamento de Acessos do Rafa's</h2>
-<div style="text-align: center;">    
-  <label for="acesso usuario">Dados de Acesso do Usuário</label>
-  <p> Entre com os dados solicitados :</p>
+    <form>
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required>
 
-     <form>
-        <label for="name">Nome:</label>
-           <input type="text" id="name" name="name"><br><br>
-       <label for="age">Ano de Nascimento:</label>
-            <input type="text" id="age" name="age"><br><br>
-        <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br><br>
-                  <button type="create" id="btn-salvar">Criar</button>
-                  <button type="submit" id="btn-entrar">entrar</button>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
 
-</div>
-
-
-  
+      <button type="submit" class="btn-entrar">ENTRAR</button>
+      <button type="button" class="btn-cadastrar" onclick="window.location.href='criarcadastro.html'">CADASTRAR</button>
+    </form>
+  </div>
 </body>
 </html>
